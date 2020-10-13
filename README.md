@@ -1,7 +1,5 @@
 ## Docker Setup for WordPress
 
-### Usage
-
 Create an `.env` file and update it accordingly:
 
     $ cp .env.example .env
