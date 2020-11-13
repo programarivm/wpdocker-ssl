@@ -25,7 +25,7 @@ Import the database:
 
 	Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
-	mysql> use foo;
+	mysql> use wpdocker;
 	Reading table information for completion of table and column names
 	You can turn off this feature to get a quicker startup with -A
 
