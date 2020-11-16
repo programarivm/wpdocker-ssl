@@ -1,33 +1,7 @@
-## Docker Setup for WordPress
+## WordPress Setup With Docker, PHP 7.4, Apache 2.4 and MySQL 8 on Ubuntu 20.04 LTS
 
-Create an `.env` file and update it accordingly:
+Hello there! This repo holds the code for the post [A WordPress Setup With Docker, PHP 7.4, Apache 2.4 and MySQL 8 on Ubuntu 20.04 LTS](https://programarivm.medium.com/a-wordpress-setup-with-docker-php-7-4-apache-2-4-and-mysql-8-on-ubuntu-20-04-lts-65eebc17c92a) on Medium.
 
-    $ cp .env.example .env
+### Do You Have Some Feedback?
 
-Build the containers:
-
-	$ docker-compose up --build
-
-Import the database:
-
-	$ docker exec -it wp_mysql /bin/bash
-	root@7ed4c31aa253:/# mysql -u root -p
-	Enter password:
-	Welcome to the MySQL monitor.  Commands end with ; or \g.
-	Your MySQL connection id is 3
-	Server version: 5.7.31 MySQL Community Server (GPL)
-
-	Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
-
-	Oracle is a registered trademark of Oracle Corporation and/or its
-	affiliates. Other names may be trademarks of their respective
-	owners.
-
-	Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
-
-	mysql> use wpdocker;
-	Reading table information for completion of table and column names
-	You can turn off this feature to get a quicker startup with -A
-
-	Database changed
-	mysql> source /home/backup.sql
+If you have any suggestions or just want to say hello, please feel free to open an issue on this repository. Thank you!
