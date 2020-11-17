@@ -20,11 +20,13 @@ services:
       networks:
           - wpdocker
       ports:
-          - "80:80"
+          - "443:443"
       volumes:
           - ./:/usr/local/apache2/vhosts/wpdocker.com
           - ./docker/apache2/conf/httpd.conf:/usr/local/apache2/conf/httpd.conf
           - ./docker/apache2/conf/extra/httpd-vhosts.conf:/usr/local/apache2/conf/extra/httpd-vhosts.conf
+          - ./docker/apache2/conf/ssl/wpdocker.local.crt:/usr/local/apache2/conf/ssl/warthog.local.crt
+          - ./docker/apache2/conf/ssl/wpdocker.local.key:/usr/local/apache2/conf/ssl/warthog.local.key
 
   mysql:
       image: mysql:5.7
